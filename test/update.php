@@ -1,0 +1,86 @@
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Geometry/includes/header.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Geometry/includes/navigation.php'; ?>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Geometry/includes/shared.php'; ?>
+<?php
+// Если это не менеджер - то вход запрещен
+if ($manager == 0) {
+	header("location: /Geometry/login.php");
+}
+?>
+<?php
+	$id = null;
+	if ( !empty($_GET['id'])) {
+		$id = $_REQUEST['id'];
+	}
+	if ( null==$id ) {
+		header("Location: index.php");
+	}
+	if ( !empty($_POST)) {
+		// Отслеживание ошибок проверки
+		$message = null;
+		// Сохранять значения отслеживаемых полей
+		$title = $_POST['title'];
+		$minute = $_POST['minute'];
+		$rate = $_POST['rate'];
+		// Проверка ввода
+		$valid = true;
+		if (empty($title)) {
+			$message =	$message.$Lang['enter'].' '.$Lang['title'].' ';
+			$valid = false;
+		}
+		if (empty($minute)) {
+			$message =	$message.$Lang['enter'].' '.$Lang['minute'].' ';
+			$valid = false;
+		}
+		if (empty($rate)) {
+			$message =	$message.$Lang['enter'].' '.$Lang['rate'].' ';
+			$valid = false;
+		}				
+		// UPDATE data
+		if ($valid) {
+			try {
+				$pdo = Database::connect();
+				$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+				$sql = "UPDATE test SET title=?,minute=?,rate=? WHERE id=?";
+				$stmt = $pdo->prepare($sql);
+				$stmt->execute(array($title,$minute,$rate,$id));
+				Database::disconnect();
+				header("Location: index.php");
+			}
+			catch (Exception $e) {
+				$message = "Ошибка: ".$sql." ".utf8_encode($e->getMessage());
+			}
+		}
+	}
+	else {
+		$pdo = Database::connect();
+		$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		$sql="SELECT * FROM test where id=?";
+		$stmt = $pdo->prepare($sql);
+		$stmt->execute(array($id));
+		$row = $stmt->fetch(PDO::FETCH_ASSOC);
+		$title = $row['title'];
+		$minute = $row['minute'];
+		$rate = $row['rate'];
+		Database::disconnect();
+	}
+?>
+<body>
+	<?php if (!empty($message)) {echo '<div class="alert alert-danger" role="alert">'.$message.'</div>';}?>
+	<div class="container">
+		<div class="row">
+			<h3 text-align="center"><?php echo $Lang['test'];?></h3>
+		</div>
+		<div class="row">
+			<h4 text-align="center"><?php echo $Lang['update_record'];?> id=<?php echo $row['id'];?></h4>
+		</div>
+		<form class="form-horizontal" enctype="multipart/form-data" action="update.php?id=<?php echo $id?>" method="post">
+			<?php inputText($Lang['title'], 'title', !empty($title)?$title:null, null, "text", "80" ) ?>
+			<?php inputNumber($Lang['minute'], 'minute', !empty($minute)?(int)$minute:10, !empty($totalError)?$totalError:null, "1", "90", "1") ?>
+			<?php inputNumber($Lang['rate'], 'rate', !empty($rate)?(int)$rate:75, !empty($totalError)?$totalError:null, "1", "100", "1") ?>			
+			<br>
+			<?php btnUpdateBack() ?>
+		</form>
+	</div> <!-- /container -->
+</body>
+<?php include $_SERVER['DOCUMENT_ROOT'] . '/Geometry/includes/footer.php'; ?>
