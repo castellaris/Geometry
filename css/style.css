@@ -1,1 +1,1806 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Geometry/images/IMG20240331152306.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
 
+/*  ������������� ���� */
+.navbar {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+border-radius: 0.5em;
+transition: transform 0.3s ease;
+}
+
+.navbar:hover {
+    transform: scale(1.01);
+}
+
+.navbar-custom { 
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+} 
+
+.navbar-custom:hover {
+    transform: scale(1.01);
+}
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius:  25em;
+} 
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text:hover { 
+    transform: scale(1.01);
+} 
+
+.navbar li a {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+	color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+}
+
+.navbar li a:hover {
+    transform: scale(1.01);
+}
+
+.navbar ul {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+	color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+}
+
+.navbar ul:hover {
+    transform: scale(1.01);
+}
+
+.nav ul {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+	color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+}
+
+.nav ul:hover {
+    transform: scale(1.01);
+}
+/* ���� ������� �������������� ���� */
+.navbar-default .navbar-collapse  {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+	color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.25em;
+}
+
+.navbar-default .navbar-collapse:hover  {
+    transform: scale(1.01);
+}
+.navbar-default .navbar-nav > li > a {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    transform: scale(1.01);
+}
+
+.dropdown-divider{
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+}
+
+.dropdown-divider:hover{
+    transform: scale(1.01);
+}
+/*  ���������� */
+.jumbotron {
+    width: 100%;	
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ;	
+    border-radius: 0.5em;
+}
+
+.jumbotron:hover {	
+    transform: scale(1.01);
+}
+
+/*  �������� */
+.card {	
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.25em;
+}
+
+.card:hover {	
+    transform: scale(1.01);
+}
+
+.card-body {	
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.5em;		
+}
+
+.card-body:hover {	
+    transform: scale(1.01);
+}
+/*  ������� */
+table.dataTable thead {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.5em;		
+}
+
+table.dataTable tbody {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.5em;			
+}
+
+table.dataTable td {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.5em;			
+}
+
+table {	
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 8);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.5em;		
+}
+
+
+/* ������ */
+.copyrights {	
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    transition:  0.3s ease-out;
+    border-radius: 0.5em;				
+}
+
+.copyrights:hover {	
+    transform: scale(1.01);
+}
+
+p {	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.5em;				
+}
+
+p:hover {	
+    transform: scale(1.01);
+}
+
+ul {	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.05em;				
+}
+
+ul:hover {	
+    transform: scale(1.01);
+}
+
+li {	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.5em;			
+}
+
+li:hover {	
+    transform: scale(1.01);
+    border-radius: 0.5em;
+}
+
+h1 {	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.5em;			
+}
+
+h1:hover {	
+    transform: scale(1.01);
+}
+
+h2 {	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.25em;
+    margin: auto;				
+}
+
+h2:hover {	
+    transform: scale(1.01);
+}
+
+h3 {	
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.25em;				
+}
+
+h3:hover {	
+    transform: scale(1.01);
+}
+
+h4 {	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.25em;				
+}
+
+h4:hover {	
+    transform: scale(1.01);
+}
+
+h5 {	
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.25em;				
+}
+
+h5:hover {
+    transform: scale(1.01);
+}
+
+h6 {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.25em;				
+}
+
+h6:hover {	
+    transform: scale(1.01);
+}
+
+hr {	
+    background-color: rgba(251, 252, 253, 0.9);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.25em;				
+}
+
+hr:hover {
+    transform: scale(1.01);
+}
+
+label{	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.25em;							
+}
+
+label:hover {
+    transform: scale(1.01);
+}
+
+.control-group{	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.25em;								
+}
+
+.control-group:hover{	
+    transform: scale(1.01);
+}
+
+input{	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.25em;								
+}
+
+input:hover{
+    transform: scale(1.01);
+}
+
+textarea{	
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;
+    border-radius: 0.25em;								
+}
+
+textarea:hover{
+    transform: scale(1.01);
+}
+
+address {	
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease-out;	
+    border-radius: 0.25em;							
+}
+
+address:hover{
+    transform: scale(1.01);
+}
+
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none
+}
+.chosen-container * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+    
+}
+.chosen-container .chosen-drop {
+    position: absolute;
+    top: 100%;
+    left: -9999px;
+    z-index: 1010;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-top: 0;
+    background: #fff;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, .15)
+}
+.chosen-container.chosen-with-drop .chosen-drop {
+    left: 0
+}
+.chosen-container a {
+    cursor: pointer
+}
+.chosen-container .search-choice .group-name,
+.chosen-container .chosen-single .group-name {
+    margin-right: 4px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    color: #999
+}
+.chosen-container .search-choice .group-name:after,
+.chosen-container .chosen-single .group-name:after {
+    content: ":";
+    padding-left: 2px;
+    vertical-align: top
+}
+.chosen-container-single .chosen-single {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 0 0 0 8px;
+    height: 25px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    background-color: #fff;
+    background: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(20%, #fff), color-stop(50%, #f6f6f6), color-stop(52%, #eee), color-stop(100%, #f4f4f4));
+    background: -webkit-linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background: -moz-linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background: -o-linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background: linear-gradient(#fff 20%, #f6f6f6 50%, #eee 52%, #f4f4f4 100%);
+    background-clip: padding-box;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0, 0, 0, .1);
+    color: #444;
+    text-decoration: none;
+    white-space: nowrap;
+    line-height: 24px
+}
+.chosen-container-single .chosen-default {
+    color: rgb(0, 0, 0);
+}
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+.chosen-container-single .chosen-single-with-deselect span {
+    margin-right: 38px
+}
+.chosen-container-single .chosen-single abbr {
+    position: absolute;
+    top: 6px;
+    right: 26px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(chosen-sprite.png) -42px 1px no-repeat;
+    font-size: 1px
+}
+.chosen-container-single .chosen-single abbr:hover {
+    background-position: -42px -10px
+}
+.chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+    background-position: -42px -10px
+}
+.chosen-container-single .chosen-single div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 18px;
+    height: 100%
+}
+.chosen-container-single .chosen-single div b {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(chosen-sprite.png) no-repeat 0 2px
+}
+.chosen-container-single .chosen-search {
+    position: relative;
+    z-index: 1010;
+    margin: 0;
+    padding: 3px 4px;
+    white-space: nowrap
+}
+.chosen-container-single .chosen-search input[type=text] {
+    margin: 1px 0;
+    padding: 4px 20px 4px 5px;
+    width: 100%;
+    height: auto;
+    outline: 0;
+    border: 1px solid #aaa;
+    background: #fff url(chosen-sprite.png) no-repeat 100% -20px;
+    background: url(chosen-sprite.png) no-repeat 100% -20px;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: normal;
+    border-radius: 0
+}
+.chosen-container-single .chosen-drop {
+    margin-top: -1px;
+    border-radius: 0 0 4px 4px;
+    background-clip: padding-box
+}
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+    position: absolute;
+    left: -9999px
+}
+.chosen-container .chosen-results {
+    color: rgb(0, 0, 0);
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 4px 4px 0;
+    padding: 0 0 0 4px;
+    max-height: 240px;
+    -webkit-overflow-scrolling: touch
+}
+.chosen-container .chosen-results li {
+    display: none;
+    margin: 0;
+    padding: 5px 6px;
+    list-style: none;
+    line-height: 15px;
+    word-wrap: break-word;
+    -webkit-touch-callout: none
+}
+.chosen-container .chosen-results li.active-result {
+    display: list-item;
+    cursor: pointer
+}
+.chosen-container .chosen-results li.disabled-result {
+    display: list-item;
+    color: rgb(0, 0, 0);
+    cursor: default
+}
+.chosen-container .chosen-results li.highlighted {
+    background-color: #3875d7;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+    background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+    background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+    background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+    background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+    color: #fff
+}
+.chosen-container .chosen-results li.no-results {
+    color: rgb(0, 0, 0);
+    display: list-item;
+    background: #f4f4f4
+}
+.chosen-container .chosen-results li.group-result {
+    display: list-item;
+    font-weight: 700;
+    cursor: default
+}
+.chosen-container .chosen-results li.group-option {
+    padding-left: 15px
+}
+.chosen-container .chosen-results li em {
+    font-style: normal;
+    text-decoration: underline
+}
+.chosen-container-multi .chosen-choices {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 5px;
+    width: 100%;
+    height: auto!important;
+    height: 1%;
+    border: 1px solid #aaa;
+    background-color: #fff;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(1%, #eee), color-stop(15%, #fff));
+    background-image: -webkit-linear-gradient(#eee 1%, #fff 15%);
+    background-image: -moz-linear-gradient(#eee 1%, #fff 15%);
+    background-image: -o-linear-gradient(#eee 1%, #fff 15%);
+    background-image: linear-gradient(#eee 1%, #fff 15%);
+    cursor: text
+}
+.chosen-container-multi .chosen-choices li {
+    float: left;
+    list-style: none
+}
+.chosen-container-multi .chosen-choices li.search-field {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap
+}
+.chosen-container-multi .chosen-choices li.search-field input[type=text] {
+    margin: 1px 0;
+    padding: 0;
+    height: 25px;
+    outline: 0;
+    border: 0!important;
+    background: transparent!important;
+    box-shadow: none;
+    color: rgb(0, 0, 0);
+    font-size: 100%;
+    font-family: inherit;
+    line-height: normal;
+    border-radius: 0
+}
+.chosen-container-multi .chosen-choices li.search-choice {
+    position: relative;
+    margin: 3px 5px 3px 0;
+    padding: 3px 20px 3px 5px;
+    border: 1px solid #aaa;
+    max-width: 100%;
+    border-radius: 3px;
+    background-color: #eee;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+    background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -o-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-size: 100% 19px;
+    background-repeat: repeat-x;
+    background-clip: padding-box;
+    box-shadow: 0 0 2px #fff inset, 0 1px 0 rgba(0, 0, 0, .05);
+    color: rgb(0, 0, 0);
+    line-height: 13px;
+    cursor: default
+}
+.chosen-container-multi .chosen-choices li.search-choice span {
+    word-wrap: break-word
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+    position: absolute;
+    top: 4px;
+    right: 3px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url(chosen-sprite.png) -42px 1px no-repeat;
+    font-size: 1px
+}
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+    background-position: -42px -10px
+}
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+    padding-right: 5px;
+    border: 1px solid #ccc;
+    background-color: #e4e4e4;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eee));
+    background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: -o-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eee 100%);
+    color: #666
+}
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+    background: #d4d4d4
+}
+.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+    background-position: -42px -10px
+}
+.chosen-container-multi .chosen-results {
+    margin: 0;
+    padding: 0
+}
+.chosen-container-multi .chosen-drop .result-selected {
+    display: list-item;
+    color: #ccc;
+    cursor: default
+}
+.chosen-container-active .chosen-single {
+    border: 1px solid #5897fb;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3)
+}
+.chosen-container-active.chosen-with-drop .chosen-single {
+    border: 1px solid #aaa;
+    -moz-border-radius-bottomright: 0;
+    border-bottom-right-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-left-radius: 0;
+    background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(20%, #eee), color-stop(80%, #fff));
+    background-image: -webkit-linear-gradient(#eee 20%, #fff 80%);
+    background-image: -moz-linear-gradient(#eee 20%, #fff 80%);
+    background-image: -o-linear-gradient(#eee 20%, #fff 80%);
+    background-image: linear-gradient(#eee 20%, #fff 80%);
+    box-shadow: 0 1px 0 #fff inset
+}
+.chosen-container-active.chosen-with-drop .chosen-single div {
+    border-left: 0;
+    background: transparent
+}
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+    background-position: -18px 2px
+}
+.chosen-container-active .chosen-choices {
+    border: 1px solid #5897fb;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3)
+}
+.chosen-container-active .chosen-choices li.search-field input[type=text] {
+    color: rgb(0, 0, 0);
+}
+.chosen-disabled {
+    opacity: .5!important;
+    cursor: default
+}
+.chosen-disabled .chosen-single {
+    cursor: default
+}
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+    cursor: default
+}
+.chosen-rtl {
+    text-align: right
+}
+.chosen-rtl .chosen-single {
+    overflow: visible;
+    padding: 0 8px 0 0
+}
+.chosen-rtl .chosen-single span {
+    margin-right: 0;
+    margin-left: 26px;
+    direction: rtl
+}
+.chosen-rtl .chosen-single-with-deselect span {
+    margin-left: 38px
+}
+.chosen-rtl .chosen-single div {
+    right: auto;
+    left: 3px
+}
+.chosen-rtl .chosen-single abbr {
+    right: auto;
+    left: 26px
+}
+.chosen-rtl .chosen-choices li {
+    float: right
+}
+.chosen-rtl .chosen-choices li.search-field input[type=text] {
+    direction: rtl
+}
+.chosen-rtl .chosen-choices li.search-choice {
+    margin: 3px 5px 3px 0;
+    padding: 3px 5px 3px 19px
+}
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+    right: auto;
+    left: 4px
+}
+.chosen-rtl.chosen-container-single-nosearch .chosen-search,
+.chosen-rtl .chosen-drop {
+    left: 9999px
+}
+.chosen-rtl.chosen-container-single .chosen-results {
+    margin: 0 0 4px 4px;
+    padding: 0 4px 0 0
+}
+.chosen-rtl .chosen-results li.group-option {
+    padding-right: 15px;
+    padding-left: 0
+}
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+    border-right: 0
+}
+.chosen-rtl .chosen-search input[type=text] {
+    padding: 4px 5px 4px 20px;
+    background: #fff url(chosen-sprite.png) no-repeat -30px -20px;
+    background: url(chosen-sprite.png) no-repeat -30px -20px;
+    direction: rtl
+}
+.chosen-rtl.chosen-container-single .chosen-single div b {
+    background-position: 6px 2px
+}
+.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+    background-position: -12px 2px
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi),
+only screen and (min-resolution: 1.5dppx) {
+    .chosen-rtl .chosen-search input[type=text],
+    .chosen-container-single .chosen-single abbr,
+    .chosen-container-single .chosen-single div b,
+    .chosen-container-single .chosen-search input[type=text],
+    .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+    .chosen-container .chosen-results-scroll-down span,
+    .chosen-container .chosen-results-scroll-up span {
+        background-image: url(chosen-sprite@2x.png)!important;
+        background-size: 52px 37px!important;
+        background-repeat: no-repeat!important
+    }
+}
+
+p {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+}
+
+/* Применение стилей к полям ввода текста без явного указания класса в HTML */
+input[type="text"],
+input[type="email"],
+textarea {
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+}
+
+/* При наведении курсора мыши */
+input[type="text"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+    transform: scale(1.01);
+    border-color: #999;
+}
+
+/* Стили для всех кнопок */
+.btn-outline-primary,
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-success,
+.btn.btn-danger,
+.btn.btn-warning,
+.btn.btn-info,
+.btn.btn-light,
+.btn.btn-dark,
+.btn.btn-link {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    padding: 10px 20px;
+    font-size: 16px;
+    height: auto;
+    width: auto;
+}
+
+/* При наведении курсора мыши */
+.btn-outline-primary:hover,
+.btn.btn-primary:hover,
+.btn.btn-secondary:hover,
+.btn.btn-success:hover,
+.btn.btn-danger:hover,
+.btn.btn-warning:hover,
+.btn.btn-info:hover,
+.btn.btn-light:hover,
+.btn.btn-dark:hover,
+.btn.btn-link:hover {
+    transform: scale(1.01);
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+    overflow: auto;
+}
+
+.header {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom-left-radius: 10px; 
+    border-bottom-right-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.header:hover {
+    transform: scale(1.01); 
+}
+
+.footer {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+ .footer:hover {
+    transform: scale(1.01); /* Измените значение на 1 или другое значение, если хотите изменить размер при наведении */
+}
+
+.nav-link.active.show {
+    background-color: rgba(255, 255, 255, 0.5); /* бело-сероватый цвет с полупрозрачностью */
+    border-radius: 5px; /* немного закругленные углы */
+    transition: all 0.3s ease-out; /* анимация при изменении свойств */
+}
+
+.nav-link.active.show:hover {
+    transform: scale(1.01); /* увеличение при наведении курсора мыши */
+}
+
+.myTable_length {
+    background-color: rgba(255, 255, 255, 0.8); /* бело-сероватый цвет с полупрозрачностью */
+    border-radius: 5px; /* немного закругленные углы */
+    color: black;
+    transition: all 0.3s ease-out; /* анимация при изменении свойств */
+    padding: 10px 20px; /* добавление отступов */
+    font-size: 16px; /* размер шрифта */
+    cursor: pointer; /* курсор указывает на возможность взаимодействия */
+}
+
+.myTable_length:hover {
+    transform: scale(1.01); /* увеличение при наведении курсора мыши */
+}
+
+.btn.btn-outline-info {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn.btn-outline-info:hover {
+    transform: scale(1.01);
+}
+
+.btn.btn-outline-success {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.btn.btn-outline-success:hover {
+    transform: scale(1.01);
+}
+
+.row {
+    border-radius: 10px; /* Радиус закругления углов */
+    transition: transform 0.3s ease; /* Анимация при изменении размера */
+}
+
+.row:hover {
+    transform: scale(1.01); /* Увеличение размера при наведении курсора мыши */
+}
+
+.paginate_button {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    border-radius: 10px; /* Радиус закругления углов */
+    transition: transform 0.3s ease; /* Анимация при изменении размера */
+}
+
+.paginate_button:hover {
+    transform: scale(1.01); /* Увеличение размера при наведении курсора мыши */
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; /* округлые углы */
+    transition: transform 0.3s ease-out; /* плавное изменение размера */
+}
+
+.card-body:hover {
+    transform: scale(1.01); /* увеличение при наведении курсора */
+}
+
+.btn-outline-danger {
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224)); /* градиентный фон */
+    color: rgb(0, 0, 0);
+    border: 2px solid dodgerblue; /* обводка */
+    border-radius: 10px; /* округлые углы */
+    transition: all 0.3s ease-out; /* плавное изменение всех свойств */
+    padding: 10px 20px; /* отступы */
+    font-size: 16px; /* размер шрифта */
+}
+
+.btn-outline-danger:hover {
+    transform: scale(1.01); /* увеличение размера при наведении */
+}
+
+.card-body {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+}
+
+/* Добавим стили для различных устройств */
+@media screen and (max-width: 768px) {
+    .card-body {
+        padding: 15px;
+        border-radius: 8px;
+    }
+}
+
+/* Динамичное изменение при наведении */
+.card-body:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+input[type="password"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="login"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="search"] {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="login"].transparent-background {
+    background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый фон */
+}
+
+input[type="login"]:hover {
+    transform: scale(1.01);
+}
+
+input[type="password"].transparent-background {
+    background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный белый фон */
+}
+
+input[type="password"]:hover {
+    transform: scale(1.01);
+}
+
+
+.card-img-top {
+    border-radius: 10px; /* Округлые углы */
+    transition: all 0.3s ease-out; /* Плавное изменение всех свойств */
+}
+
+.card-img-top:hover {
+    transform: scale(1.01); /* Увеличение размера при наведении курсора */
+}
+
+/* Основные стили для изображения */
+img {
+    height: auto; /* Делает изображение адаптивным по высоте */
+    max-width: 100%; /* Делает изображение масштабируемым и адаптивным по ширине */
+    display: block; /* Убирает пробелы вокруг изображения */
+    margin: 0 auto; /* Центрирует изображение по горизонтали */
+}
+
+/* Медиа-запросы для различных размеров экрана */
+@media screen and (max-width: 768px) {
+    img {
+        max-width: 80%; /* При уменьшении экрана, изображение занимает меньше места */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    img {
+        max-width: 100%; /* При очень маленьких экранах, изображение занимает всю доступную ширину */
+    }
+}
+
+.logo-img {
+    max-height: 48px; /* Maximum height of the logo */
+    width: auto; /* Allow width to adjust dynamically */
+    height: auto; /* Allow height to adjust dynamically */
+    transition: max-height 0.5s; /* Smooth transition for resizing */
+}
+
+@media (max-width: 768px) {
+    .logo-img {
+        max-height: 36px; /* Adjust maximum height for smaller screens */
+    }
+}
+
+label {
+    color: black; /* Set text color to black for all label elements */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; /* Округлые углы */
+    transition: transform 0.3s ease-in-out; /* Плавное изменение размера */
+    padding: 20px; /* Поля внутри контейнера */
+}
+
+.col-md-3 {
+    width: 25%; /* Ширина 25% от родительского элемента */
+    float: left; /* Для обеспечения блочной модели */
+    box-sizing: border-box; /* Учитывать padding и border в размерах */
+    padding: 0 15px; /* Внутренние отступы для соблюдения макета Bootstrap */
+}
+
+/* Пример медиа-запроса для адаптации на разных устройствах */
+@media (max-width: 768px) {
+    .col-md-3 {
+        width: 50%; /* На устройствах с шириной экрана до 768px */
+    }
+}
+
+.col-md-9 {
+    width: 75%; /* Ширина 75% от родительского элемента */
+    float: left; /* Для обеспечения блочной модели */
+    box-sizing: border-box; /* Учитывать padding и border в размерах */
+    padding: 0 15px; /* Внутренние отступы для соблюдения макета Bootstrap */
+}
+
+/* Пример медиа-запроса для адаптации на разных устройствах */
+@media (max-width: 768px) {
+    .col-md-9 {
+        width: 100%; /* На устройствах с шириной экрана до 768px, занимать всю ширину */
+    }
+}
+
+.dataTables_scrollHeadInner {
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224)); /* градиентный фон */
+}
+
+.dataTables_scrollHead {
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224)); /* градиентный фон */
+}
+
+input[type="search"] {
+    color: black;
+}
+
+.sorting_disabled {
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224)); /* градиентный фон */
+}
+
+th, td, thead {
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224)); /* градиентный фон */
+}
+
+#login {
+    color:#000000
+}
+
+.controls {
+    color:#000000;
+}
+
+ th, td, thead, .navbar-brand, .nav-link{
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224)); /* градиентный фон */
+}
+
+/* CSS styles */
+.navbar-brand {
+    border-radius: 10px; /* Adjust the value as needed for your desired roundness */
+}
+
+a {
+    color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+    width: auto; /* Пример: ширина 90% от родительского блока */
+    height: auto; /* Пример: высота 90% от родительского блока */
+    border-radius: 10px;
+    transition: all 0.3s ease-out;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+a:hover{
+    transform: scale(1.01); /* увеличение при наведении курсора */
+}
+
+/* Базовые стили */
+p {
+    width: 100%;
+    height: 100%;
+    margin: auto; /* Центрирование по горизонтали */
+    text-align: center; /* Центрирование по вертикали */
+}
+
+/* Медиа-запросы и другие стили остаются неизменными */
+
+
+/* Медиа-запрос для маленьких экранов (например, мобильные устройства) */
+@media screen and (max-width: 600px) {
+    p {
+        /* Примерные стили для маленьких экранов */
+        width: 90%; /* Уменьшаем ширину до 90% */
+        height: auto; /* Автоматическая высота */
+    }
+}
+
+/* Медиа-запрос для планшетов и средних экранов */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    p {
+        /* Примерные стили для средних экранов */
+        width: 80%; /* Уменьшаем ширину до 80% */
+        height: auto; /* Автоматическая высота */
+    }
+}
+
+/* Медиа-запрос для больших экранов (например, десктопы) */
+@media screen and (min-width: 1025px) {
+    p {
+        /* Примерные стили для больших экранов */
+        width: 70%; /* Уменьшаем ширину до 70% */
+        height: auto; /* Автоматическая высота */
+    }
+}
+
+.navbar-nav {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-brand {
+    color: black;
+}
+
+.navbar-toggler {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.navbar-toggler-icon {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: 0,3 ease-out;
+}
+
+.navbar-toggler-icon:hover {
+    transform: scale(1.01);
+}
+
+.dropdown-menu {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.nav-link {
+    height: auto;
+    width: auto;
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+}
+
+.container {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.row {
+    color: black;
+}
+
+.btn {
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+}
+
+.table {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.navbar-collapse {
+    margin-left: auto;
+}
+
+.nav-link:hover {
+    transform: scale(1.01);
+}
+
+.nav-item{
+    color: black;
+    background: linear-gradient(to bottom, dodgerblue, rgb(142, 224, 224));
+    height: auto;
+    width: auto;
+}
+
+.nav-item:hover {
+    transform: scale(1.01);
+}
+
+li:hover {
+    transform: scale(1.01);
+}
+
+.navbar-expand-lg {
+    width: auto;
+}
+
+.navbar-nav li.nav-item {
+    margin-right: 10 px; /* Расстояние между кнопками */
+    padding: 15px; /* Подогнать внутренний отступ к фиксированной ширине */
+    text-align: center; /* Центрировать текст в кнопках */
+}
+
+/* Расширяем меню на всю ширину */
+/* Центрирование меню */
+.navbar-nav {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar-nav .nav-item {
+    width: auto;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1rem; /* базовый размер текста */
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-outline-info {
+    color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  
+  .btn-outline-info:hover {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+  }
+  
+  /* Устанавливаем размер текста в зависимости от размера кнопки */
+  .btn-outline-info {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .btn-outline-info:hover {
+    white-space: normal;
+  }
+  
+  /* Стили для мобильного устройства (максимальная ширина 767px) */
+@media (max-width: 767px) {
+    .navbar-nav {
+        flex-direction: column; /* Отображать пункты меню вертикально */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* Добавить отступ между пунктами меню */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px; /* Увеличить отступы вокруг текста ссылок */
+    }
+
+    .navbar-nav .dropdown-menu {
+        margin-left: auto;
+        position: static; /* Сделать выпадающее меню видимым на мобильных устройствах */
+        width: auto; /* Автоматический размер выпадающего меню */
+        margin: 0; /* Убрать отступы */
+        background-color: #f8f9fa; /* Цвет фона выпадающего меню */
+        border: none; /* Убрать границу */
+    }
+
+    .navbar-nav .dropdown-item {
+        display: block; /* Пункты меню располагаются вертикально */
+        width: 100%; /* Занимать всю ширину родительского контейнера */
+        padding: 8px 16px; /* Отступы вокруг текста пунктов меню */
+        clear: both; /* Очистка float */
+        color: #333; /* Цвет текста пунктов меню */
+        text-align: left; /* Выравнивание текста слева */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item:last-child {
+        margin-bottom: 0; /* Убрать отступ снизу у последнего пункта */
+    }
+}
+
+/* Стили для планшетов и десктопов (минимальная ширина 768px) */
+@media (min-width: 768px) {
+    .navbar-nav {
+        justify-content: center; /* Разместить пункты меню справа */
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px; /* Добавить отступ между пунктами меню */
+    }
+
+    .navbar-nav .nav-link,
+    .navbar-nav .dropdown-menu {
+        transition: background-color 0.3s ease; /* Плавный переход при наведении */
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .dropdown-menu:hover .dropdown-item {
+        background-color: #f8f9fa; /* Изменение цвета фона при наведении */
+    }
+
+    .navbar-nav .dropdown-menu {
+        display: none; /* Скрыть выпадающее меню по умолчанию */
+        position: absolute; /* Абсолютное позиционирование */
+        z-index: 1000; /* Переместить поверх остального контента */
+        background-color: #fff; /* Цвет фона выпадающего меню */
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Тень для выпадающего меню */
+    }
+
+    .navbar-nav .nav-item:hover .dropdown-menu {
+        display: block; /* Показать выпадающее меню при наведении */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item {
+        width: 200px; /* Ширина выпадающего меню */
+        padding: 10px 20px; /* Отступы вокруг текста пунктов меню */
+        color: #333; /* Цвет текста пунктов меню */
+        text-align: left; /* Выравнивание текста слева */
+    }
+
+    .navbar-nav .dropdown-menu .dropdown-item:last-child {
+        margin-bottom: 0; /* Убрать отступ снизу у последнего пункта */
+    }
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 20px; /* Отступы вокруг текста ссылок */
+    min-width: 120px; /* Фиксированная ширина кнопок */
+    text-align: center; /* Выравнивание текста по центру */
+    white-space: nowrap; /* Запрет переноса текста на следующую строку */
+}
+
+p {
+    margin: 20px auto; /* Центрирует элемент по горизонтали и добавляет 20px верхнего и нижнего margin */
+    text-align: center; /* Если это текст */
+    /* Другие свойства стиля */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-height: 100%; /* Максимальная высота будет равна высоте родительского контейнера */
+    overflow-y: auto; /* Если содержимое не помещается, добавляется полоса прокрутки */
+}
+
+/* Медиа-запросы для адаптивности */
+@media screen and (max-width: 768px) {
+    .content {
+        max-height: none; /* Снять ограничение на высоту на мобильных устройствах */
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-lg .navbar-nav .nav-item {
+        margin-left: 10px;
+    }
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: auto; /* Let the navbar adjust its width based on content */
+    margin-right: auto; /* Push the navbar to the left */
+    margin-left: auto; /* Push the navbar to the left */
+}
+
+.dropdown-item {
+    overflow: hidden;
+    white-space: nowrap; /* Предотвращает перенос текста на следующую строку */
+    text-overflow: ellipsis; /* Добавляет многоточие для обрезанного текста */
+}
+
+#myTable {
+    border-radius: 0.5em;
+}
+
+.navbar-nav .nav-item:not(:last-child) {
+    margin-right: -5px;
+}
+
+.navbar-nav {
+    margin-left: auto; /* Левый отступ для смещения меню влево */
+}
+
+select {
+    margin-top: 10px;
+}
+
+.container {
+    padding: 30px; /* отступы внутри контейнера */
+}
+
+.row {
+    margin-bottom: 50px; /* уменьшаем внешний отступ */
+}
+
+.table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.btn {
+    white-space: nowrap; /* чтобы текст не переносился */
+    overflow: hidden; /* чтобы текст не выходил за пределы элемента */
+    text-overflow: ellipsis; /* если текст слишком длинный, обрезать и показать многоточие */
+    transition: white-space 0.3s; /* плавное изменение свойства */
+}
+
+.btn:hover {
+    white-space: normal; /* показать текст полностью при наведении */
+}
+
+.btn {
+    white-space: normal; /* Разрешить перенос текста */
+    word-wrap: break-word; /* Переносить длинные слова на новую строку */
+    max-width: 100%; /* Ограничить максимальную ширину */
+}
+
+.btn {
+    white-space: normal; /* Разрешает тексту переноситься на новую строку, если он не помещается */
+    overflow: hidden; /* Скрытие текста, который не помещается */
+    font-size: 14px; /* Изменение размера шрифта по умолчанию */
+}
+
+.btn.btn-outline-info {
+    padding: 10px; /* Увеличение внутренних отступов кнопок для увеличения размеров */
+    height: auto; /* Автоматическое определение высоты */
+}
+
+p {
+    width: 100%;
+}
+
+h3 {
+    width: auto;
+}
+
+.container p {
+    width: auto;
+}
+
+.WordSection1 p {
+    width: 100%;
+    margin: 0;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+.task-description {
+    margin-top: 15.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    line-height: normal;
+    background: white;
+    width: 100%;
+}
+
+.task-description p {
+    font-size: 11.5pt;
+    font-family: "Helvetica", sans-serif;
+    color: #333333;
+    width: 100%;
+}
+
+
+.task-description {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 10px; /* Добавляем отступ между текстовым полем и кнопками */
+}
+
+button {
+    margin-top: 10px; /* Добавляем отступ между кнопками и текстовым полем */
+}
+.MsoNormal p em {
+    display: inline-block;
+    text-align: center;
+    height: auto; /* Избыточно, так как высота уже по умолчанию auto */
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.WordSection1 p {
+    overflow: auto;
+    max-height: 200px; /* Если хотите, чтобы элементы подстраивались, возможно, лучше заменить на высоту контейнера */
+    width: 100%; /* Подстраиваемся под ширину родителя */
+    max-width: 100%; /* Необходимо добавить, чтобы предотвратить превышение ширины */
+    margin: 0;
+    padding: 0;
+    background: white;
+}
+
+.WordSection1 .MsoNormal .row {
+    width: 100%; /* Подстраиваемся под ширину родителя */
+    max-width: 100%; /* Необходимо добавить, чтобы предотвратить превышение ширины */
+}
+
+.form-controls a:last-child,
+.form-controls button:last-child {
+    margin-right: 0; /* У последнего элемента нет правого отступа */
+}
+
+p {
+    margin-top: 10px;
+}
+div.full-width {
+    width: 100%;
+}
+
+.task p {
+    width: 100%;
+    text-align: center;
+}
+
+a {
+    margin-top: 10px;
+}
+
+.wordsection1 {
+    position: relative; /* относительное позиционирование */
+  }
+  
+  .wordsection1 img, /* например, изображения */
+  .wordsection1 div { /* или другие блочные элементы */
+    width: 100%; /* ширина равна 100% ширины родительского блока */
+    height: 100%; /* высота равна 100% высоты родительского блока */
+  }
+  
+  .WordSection1 {
+    width: 100%; /* Adjust the width as needed */
+    height: 100%;
+    /* Add any other styles you want for the container */
+}
+
+.WordSection1 p, .WordSection1 img {
+    max-width: 100%; /* Make paragraphs and images responsive */
+    height: 100%; /* Maintain aspect ratio for images */
+}
+
+.task-condition {
+    margin-top: 25px;
+    font-family: "Helvetica", sans-serif;
+    color: #333333;
+    background-color: white;
+}
+
+.task-condition img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+.task-description {
+    word-wrap: break-word;
+}
+
+p {
+    margin-top: 15.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    width: auto;
+    font-size: 11.5pt;
+    font-family: "Helvetica", sans-serif;
+}
+
+p * {
+    width: auto;
+}
+
+.task-description p {
+    white-space: nowrap; /* предотвращает перенос текста */
+}
+
+.task-description img {
+    display: inline-block; /* чтобы изображения не обрывали предложения */
+}
+
+.task-condition br {
+    white-space: nowrap; /* предотвращает перенос текста */
+}
+
+.task-description {
+    margin-top: 15.0pt;
+    margin-right: 0cm;
+    margin-bottom: 0cm;
+    margin-left: 0cm;
+    margin-bottom: .0001pt;
+    line-height: normal;
+    background: white;
+    width: 100%;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 11.5pt;
+    font-family: 'Helvetica', sans-serif;
+    color: #333333;
+}
+
+.task-description img {
+    vertical-align: middle;
+}
+
+.btn {
+    margin: 0;
+}
+
+.task-description {
+    text-align: left;
+}
+
+.MsoNormal {
+    text-align: left;
+}
+
+.task-description {
+    word-wrap: break-word;
+}
+
+.task-description img {
+    max-width: 100%;
+}
+
+/* Пример медиа-запроса для адаптивности */
+@media screen and (max-width: 768px) {
+    .task-description {
+      font-size: 90%; /* Уменьшение размера шрифта на маленьких экранах */
+    }
+  }
+  
+  /* Пример анимации для динамичности */
+  .task-description {
+    transition: all 0.3s ease; /* Плавный переход */
+  }
+  
+  /* Пример использования относительных единиц измерения для масштабируемости */
+  .task-description {
+    font-size: 1em; /* Относительный размер шрифта */
+    width: 90%; /* Ширина контейнера в процентах */
+  }
+
+  .task p {
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+.task-description p {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+.task-description {
+    white-space: normal; /* Разрешает перенос текста */
+    word-wrap: break-word; /* Разбивает длинные слова на несколько строк */
+}
+
+.task-description p {
+    white-space: normal; /* Разрешает перенос текста */
+    word-wrap: break-word; /* Разбивает длинные слова на несколько строк */
+    font-style: italic;
+    font-size: inherit; /* Наследует размер шрифта от родительского элемента */
+}
+
+.content {
+    max-width: 700px; /* максимальная ширина блока с контентом */
+    margin: 20px auto; /* центрирование блока на странице и добавление отступов сверху и снизу */
+    padding: 20px; /* отступы по бокам и сверху/снизу для сохранения читаемости */
+    box-sizing: border-box; /* учитываем padding внутри ширины блока */
+    height: 100%; /* автоматическая высота блока */
+}
+
+.content p {
+    max-width: 90%; /* максимальная ширина параграфа */
+    word-wrap: break-word; /* автоматический перенос текста */
+    line-height: 1.5; /* межстрочный интервал для улучшения читаемости */
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .content {
+        padding: 10px; /* уменьшаем отступы на мобильных устройствах */
+    }
+}
+
+.table {
+    width: 100%; /* Ширина таблицы будет равна 100% ширины родительского блока */
+    height: 100%; /* Высоту можно также установить на 100% или задать нужное значение */
+    /* Дополнительные стили для таблицы */
+  }
+  
